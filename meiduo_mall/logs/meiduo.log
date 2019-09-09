@@ -1,0 +1,3 @@
+INFO 2019-09-09 11:05:28,595 basehttp 124 "GET / HTTP/1.1" 200 1714
+WARNING 2019-09-09 11:05:28,704 base 152 Not Found: /favicon.ico
+WARNING 2019-09-09 11:05:28,709 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 1967
