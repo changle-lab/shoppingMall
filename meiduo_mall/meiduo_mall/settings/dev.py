@@ -24,13 +24,15 @@ SECRET_KEY = 'tpxbec@d4s3ol**4hgb4@&&$x=(j=g_8y0zt!@73wfz41m+k9o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# localhost 是 0.0.0.0
+ALLOWED_HOSTS = ['www.meiduo.site', '127.0.0.1', 'localhost', 'api.meiduo.site']
 print("```~~~~~~~```")
 print(BASE_DIR)
 # django项目默认导包路径
 import sys
+
 print(sys.path)
-#告诉django项目路径
+# 告诉django项目路径
 sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 print(sys.path)
 print("``~~~~~~~~``")
@@ -45,11 +47,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     "users.apps.UsersConfig",
-
+    'corsheaders',
 
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -130,7 +133,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-
 # 缓存配置
 CACHES = {
     "default": {
@@ -158,8 +160,7 @@ CACHES = {
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "session"
 
-
-#日志配置
+# 日志配置
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,  # 是否禁用已经存在的日志器
@@ -207,3 +208,12 @@ REST_FRAMEWORK = {
 }
 
 AUTH_USER_MODEL = 'users.User'
+
+# CORS 增加白名单
+CORS_ORIGIN_WHITELIST = (
+    '127.0.0.1:8080',
+    'localhost:8080',
+    'www.meiduo.site:8080',
+    'api.meiduo.site:8000'
+)
+CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
