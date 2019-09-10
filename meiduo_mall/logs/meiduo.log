@@ -1,3 +1,100 @@
 INFO 2019-09-09 11:05:28,595 basehttp 124 "GET / HTTP/1.1" 200 1714
 WARNING 2019-09-09 11:05:28,704 base 152 Not Found: /favicon.ico
 WARNING 2019-09-09 11:05:28,709 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 1967
+WARNING 2019-09-10 14:10:56,402 base 152 Not Found: /
+WARNING 2019-09-10 14:10:56,408 basehttp 124 "GET / HTTP/1.1" 404 2106
+WARNING 2019-09-10 14:10:57,249 base 152 Not Found: /favicon.ico
+WARNING 2019-09-10 14:10:57,266 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2157
+WARNING 2019-09-10 14:12:16,081 base 152 Not Found: /
+WARNING 2019-09-10 14:12:16,085 basehttp 124 "GET / HTTP/1.1" 404 2106
+WARNING 2019-09-10 14:12:16,423 base 152 Not Found: /favicon.ico
+WARNING 2019-09-10 14:12:16,423 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2157
+WARNING 2019-09-10 14:13:04,990 base 152 Not Found: /
+WARNING 2019-09-10 14:13:04,991 basehttp 124 "GET / HTTP/1.1" 404 2106
+WARNING 2019-09-10 14:13:05,340 base 152 Not Found: /favicon.ico
+WARNING 2019-09-10 14:13:05,343 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2157
+WARNING 2019-09-10 14:20:02,602 base 152 Not Found: /sms_code/13789898989
+WARNING 2019-09-10 14:20:02,606 basehttp 124 "GET /sms_code/13789898989 HTTP/1.1" 404 2184
+INFO 2019-09-10 14:20:32,250 basehttp 124 "GET /sms_codes/13789898989 HTTP/1.1" 301 0
+ERROR 2019-09-10 14:20:32,266 exception 135 Internal Server Error: /sms_codes/13789898989/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/users/views.py", line 23, in get
+    conn = get_redis_connection('sms_code')
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django_redis/__init__.py", line 14, in get_redis_connection
+    cache = caches[alias]
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/cache/__init__.py", line 77, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'sms_code' in settings.CACHES
+ERROR 2019-09-10 14:20:32,329 basehttp 124 "GET /sms_codes/13789898989/ HTTP/1.1" 500 18396
+INFO 2019-09-10 14:20:51,903 basehttp 124 "GET /sms_codes/13789898989 HTTP/1.1" 301 0
+ERROR 2019-09-10 14:20:51,952 exception 135 Internal Server Error: /sms_codes/13789898989/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/users/views.py", line 23, in get
+    conn = get_redis_connection('sms_code')
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django_redis/__init__.py", line 14, in get_redis_connection
+    cache = caches[alias]
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/cache/__init__.py", line 77, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'sms_code' in settings.CACHES
+ERROR 2019-09-10 14:20:52,003 basehttp 124 "GET /sms_codes/13789898989/ HTTP/1.1" 500 18396
+INFO 2019-09-10 14:26:04,895 basehttp 124 "GET /sms_codes/13789898989 HTTP/1.1" 301 0
+ERROR 2019-09-10 14:26:04,912 exception 135 Internal Server Error: /sms_codes/13789898989/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/users/views.py", line 26, in get
+    ccp = CCP()
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/libs/yuntongxun/sms.py", line 53, in __new__
+    cls._instance.rest = REST(_serverIP, _serverPort, _softVersion)
+NameError: name 'REST' is not defined
+ERROR 2019-09-10 14:26:04,946 basehttp 124 "GET /sms_codes/13789898989/ HTTP/1.1" 500 18282
+INFO 2019-09-10 14:30:24,356 basehttp 124 "GET /sms_codes/13789898989 HTTP/1.1" 301 0
+INFO 2019-09-10 14:30:24,684 basehttp 124 "GET /sms_codes/13789898989/ HTTP/1.1" 200 4
+INFO 2019-09-10 14:33:44,025 basehttp 124 "GET /sms_codes/13789898989 HTTP/1.1" 301 0
+INFO 2019-09-10 14:33:44,313 basehttp 124 "GET /sms_codes/13789898989/ HTTP/1.1" 200 4
