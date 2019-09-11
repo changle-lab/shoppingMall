@@ -156,3 +156,405 @@ ERROR 2019-09-10 23:22:12,808 exception 80 Invalid HTTP_HOST header: 'api.meiduo
 WARNING 2019-09-10 23:22:12,867 basehttp 124 "GET /usernames/ffffff/count/ HTTP/1.1" 400 72317
 WARNING 2019-09-10 23:24:02,394 base 152 Not Found: /usernames/grgggg/count/
 WARNING 2019-09-10 23:24:02,405 basehttp 124 "GET /usernames/grgggg/count/ HTTP/1.1" 404 2199
+WARNING 2019-09-10 23:43:33,670 base 152 Not Found: /usernames/python/count/
+WARNING 2019-09-10 23:43:33,672 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 404 2383
+WARNING 2019-09-10 23:44:27,083 base 152 Not Found: /usernames/python/count/
+WARNING 2019-09-10 23:44:27,089 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 404 2383
+WARNING 2019-09-10 23:45:26,149 base 152 Not Found: /usernames/fffffff/count/
+WARNING 2019-09-10 23:45:26,151 basehttp 124 "GET /usernames/fffffff/count/ HTTP/1.1" 404 2385
+WARNING 2019-09-10 23:46:04,836 base 152 Not Found: /usernames/fefefefefe/count/
+WARNING 2019-09-10 23:46:04,837 basehttp 124 "GET /usernames/fefefefefe/count/ HTTP/1.1" 404 2395
+INFO 2019-09-10 23:48:48,175 basehttp 124 "GET /usernames/fffffffff/count/ HTTP/1.1" 200 11
+INFO 2019-09-10 23:49:30,925 basehttp 124 "GET /usernames/333333/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 00:01:42,573 basehttp 124 "GET /usernames/333333/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 00:03:03,645 basehttp 124 "GET /usernames/333333/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 00:03:22,665 basehttp 124 "GET /usernames/17310115251/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 00:03:29,541 basehttp 124 "GET /usernames/17310115251/count/ HTTP/1.1" 200 11
+WARNING 2019-09-11 00:04:03,029 base 152 Not Found: /mobiles/17388998899/count/
+WARNING 2019-09-11 00:04:03,032 basehttp 124 "GET /mobiles/17388998899/count/ HTTP/1.1" 404 2398
+WARNING 2019-09-11 00:05:01,263 base 152 Not Found: /mobiles/17388998899/count/
+WARNING 2019-09-11 00:05:01,264 basehttp 124 "GET /mobiles/17388998899/count/ HTTP/1.1" 404 2398
+INFO 2019-09-11 00:08:44,144 basehttp 124 "GET /mobiles/18899999999/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 00:09:15,305 basehttp 124 "GET /mobiles/17398765678/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 00:50:06,218 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 00:50:18,917 basehttp 124 "GET /mobiles/17389898989/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 00:50:19,148 basehttp 124 "GET /mobiles/17389898989/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 00:50:19,222 basehttp 124 "GET /sms_codes/17389898989/ HTTP/1.1" 200 4
+INFO 2019-09-11 00:50:36,270 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+WARNING 2019-09-11 00:50:36,291 base 152 Not Found: /users/
+WARNING 2019-09-11 00:50:36,294 basehttp 124 "POST /users/ HTTP/1.1" 404 2533
+INFO 2019-09-11 00:50:36,301 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 00:50:36,305 basehttp 124 "GET /mobiles/17389898989/count/ HTTP/1.1" 200 11
+WARNING 2019-09-11 00:50:43,414 base 152 Not Found: /users/
+INFO 2019-09-11 00:50:43,421 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 00:50:43,426 basehttp 124 "GET /mobiles/17389898989/count/ HTTP/1.1" 200 11
+WARNING 2019-09-11 00:50:43,429 basehttp 124 "POST /users/ HTTP/1.1" 404 2533
+INFO 2019-09-11 00:54:20,884 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 00:54:33,905 basehttp 124 "GET /mobiles/17387878787/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 00:54:34,110 basehttp 124 "GET /mobiles/17387878787/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 00:54:34,138 basehttp 124 "GET /sms_codes/17387878787/ HTTP/1.1" 200 4
+INFO 2019-09-11 00:54:50,483 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 00:54:50,494 basehttp 124 "GET /mobiles/17387878787/count/ HTTP/1.1" 200 11
+ERROR 2019-09-11 00:54:50,516 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'password2' is an invalid keyword argument for this function
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 957, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `User.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `User.objects.create()`. You may need to make the field read-only, or override the UserSerializers.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'password2' is an invalid keyword argument for this function
+
+ERROR 2019-09-11 00:54:50,568 basehttp 124 "POST /users/ HTTP/1.1" 500 22990
+INFO 2019-09-11 00:57:17,208 basehttp 124 "GET /mobiles/17387878787/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 00:58:00,473 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 00:58:26,956 basehttp 124 "GET /mobiles/17387878787/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 00:58:33,233 basehttp 124 "GET /mobiles/17387878787/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 00:58:33,269 basehttp 124 "GET /sms_codes/17387878787/ HTTP/1.1" 200 4
+INFO 2019-09-11 00:58:59,310 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 00:58:59,313 basehttp 124 "GET /mobiles/17387878787/count/ HTTP/1.1" 200 11
+ERROR 2019-09-11 00:58:59,326 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'password2' is an invalid keyword argument for this function
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 957, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `User.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `User.objects.create()`. You may need to make the field read-only, or override the UserSerializers.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'password2' is an invalid keyword argument for this function
+
+ERROR 2019-09-11 00:58:59,358 basehttp 124 "POST /users/ HTTP/1.1" 500 22990
+INFO 2019-09-11 01:10:09,153 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:10:30,869 basehttp 124 "GET /mobiles/17354545454/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:10:31,090 basehttp 124 "GET /mobiles/17354545454/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:10:31,114 basehttp 124 "GET /sms_codes/17354545454/ HTTP/1.1" 200 4
+INFO 2019-09-11 01:10:46,039 basehttp 124 "GET /mobiles/17354545454/count/ HTTP/1.1" 200 11
+ERROR 2019-09-11 01:10:46,048 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'password2' is an invalid keyword argument for this function
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 957, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `User.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `User.objects.create()`. You may need to make the field read-only, or override the UserSerializers.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'password2' is an invalid keyword argument for this function
+
+INFO 2019-09-11 01:10:46,053 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 11
+ERROR 2019-09-11 01:10:46,088 basehttp 124 "POST /users/ HTTP/1.1" 500 22990
+INFO 2019-09-11 01:18:56,430 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:19:24,668 basehttp 124 "GET /mobiles/17389898977/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:19:24,915 basehttp 124 "GET /mobiles/17389898977/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:19:24,955 basehttp 124 "GET /sms_codes/17389898977/ HTTP/1.1" 200 4
+INFO 2019-09-11 01:19:45,843 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:19:45,847 basehttp 124 "GET /mobiles/17389898977/count/ HTTP/1.1" 200 11
+ERROR 2019-09-11 01:19:45,857 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/users/serializers.py", line 124, in validate
+    redis_conn = get_redis_connection('verify_codes')
+NameError: name 'get_redis_connection' is not defined
+ERROR 2019-09-11 01:19:45,884 basehttp 124 "POST /users/ HTTP/1.1" 500 19219
+INFO 2019-09-11 01:20:31,595 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:20:55,460 basehttp 124 "GET /mobiles/17365656565/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:20:55,675 basehttp 124 "GET /mobiles/17365656565/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:20:55,710 basehttp 124 "GET /sms_codes/17365656565/ HTTP/1.1" 200 4
+INFO 2019-09-11 01:21:11,375 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:21:11,382 basehttp 124 "GET /mobiles/17365656565/count/ HTTP/1.1" 200 11
+ERROR 2019-09-11 01:21:11,384 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/users/serializers.py", line 125, in validate
+    redis_conn = get_redis_connection('verify_codes')
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django_redis/__init__.py", line 14, in get_redis_connection
+    cache = caches[alias]
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/cache/__init__.py", line 77, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'verify_codes' in settings.CACHES
+ERROR 2019-09-11 01:21:11,412 basehttp 124 "POST /users/ HTTP/1.1" 500 19651
+INFO 2019-09-11 01:23:27,230 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:23:45,597 basehttp 124 "GET /mobiles/17357575757/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:23:45,784 basehttp 124 "GET /mobiles/17357575757/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:23:45,817 basehttp 124 "GET /sms_codes/17357575757/ HTTP/1.1" 200 4
+INFO 2019-09-11 01:23:56,119 basehttp 124 "GET /mobiles/17357575757/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:23:56,129 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:23:56,195 basehttp 124 "POST /users/ HTTP/1.1" 201 51
+WARNING 2019-09-11 01:23:56,372 base 152 Not Found: /skus/search/
+WARNING 2019-09-11 01:23:56,381 basehttp 124 "GET /skus/search/?page=1&page_size=6 HTTP/1.1" 404 2729
+INFO 2019-09-11 01:24:49,579 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+WARNING 2019-09-11 01:24:49,587 base 152 Not Found: /authorizations/
+WARNING 2019-09-11 01:24:49,587 basehttp 124 "POST /authorizations/ HTTP/1.1" 404 2716
+INFO 2019-09-11 01:27:07,307 basehttp 124 "GET /usernames/changyu/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:27:20,041 basehttp 124 "GET /mobiles/17310115251/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:27:20,283 basehttp 124 "GET /mobiles/17310115251/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:27:20,326 basehttp 124 "GET /sms_codes/17310115251/ HTTP/1.1" 200 4
+INFO 2019-09-11 01:27:32,766 basehttp 124 "GET /usernames/changyu/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:27:32,777 basehttp 124 "GET /mobiles/17310115251/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:27:32,779 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2019-09-11 01:27:32,838 basehttp 124 "POST /users/ HTTP/1.1" 201 109
+WARNING 2019-09-11 01:27:32,973 base 152 Not Found: /skus/search/
+WARNING 2019-09-11 01:27:32,976 basehttp 124 "GET /skus/search/?page=1&page_size=6 HTTP/1.1" 404 2729
+WARNING 2019-09-11 01:28:57,266 base 152 Not Found: /skus/search/
+WARNING 2019-09-11 01:28:57,268 basehttp 124 "GET /skus/search/?page=1&page_size=6 HTTP/1.1" 404 2729
+INFO 2019-09-11 01:29:02,353 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+WARNING 2019-09-11 01:29:02,361 base 152 Not Found: /authorizations/
+WARNING 2019-09-11 01:29:02,361 basehttp 124 "POST /authorizations/ HTTP/1.1" 404 2716
+INFO 2019-09-11 01:29:07,035 basehttp 124 "GET /usernames/changyu/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:29:11,388 basehttp 124 "GET /usernames/liudehua/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:29:22,748 basehttp 124 "GET /mobiles/18888888888/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:29:22,997 basehttp 124 "GET /mobiles/18888888888/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:29:23,029 basehttp 124 "GET /sms_codes/18888888888/ HTTP/1.1" 200 4
+INFO 2019-09-11 01:29:49,212 basehttp 124 "GET /usernames/liudehua/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:29:49,218 basehttp 124 "GET /mobiles/18888888888/count/ HTTP/1.1" 200 11
+ERROR 2019-09-11 01:29:49,227 exceptions 25 [<users.views.UserView object at 0x7f04f1dd4710>] (1062, "Duplicate entry '' for key 'mobile'")
+ERROR 2019-09-11 01:29:49,230 basehttp 124 "POST /users/ HTTP/1.1" 507 35
+ERROR 2019-09-11 01:29:51,375 exceptions 25 [<users.views.UserView object at 0x7f04f1e01da0>] (1062, "Duplicate entry '' for key 'mobile'")
+ERROR 2019-09-11 01:29:51,376 basehttp 124 "POST /users/ HTTP/1.1" 507 35
+INFO 2019-09-11 01:29:51,386 basehttp 124 "GET /mobiles/18888888888/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:29:51,388 basehttp 124 "GET /usernames/liudehua/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:30:00,519 basehttp 124 "GET /mobiles/18888888888/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:30:30,346 basehttp 124 "GET /mobiles/17388888888/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:30:30,531 basehttp 124 "GET /sms_codes/17388888888/ HTTP/1.1" 200 4
+INFO 2019-09-11 01:30:30,557 basehttp 124 "GET /mobiles/17388888888/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:30:46,339 basehttp 124 "GET /usernames/liudehua/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 01:30:46,340 basehttp 124 "GET /mobiles/17388888888/count/ HTTP/1.1" 200 11
+ERROR 2019-09-11 01:30:46,356 exceptions 25 [<users.views.UserView object at 0x7f04f15add30>] (1062, "Duplicate entry '' for key 'mobile'")
+ERROR 2019-09-11 01:30:46,357 basehttp 124 "POST /users/ HTTP/1.1" 507 35
+INFO 2019-09-11 11:14:32,486 basehttp 124 "GET /usernames/changyu/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:14:38,679 basehttp 124 "GET /usernames/zhangmingyue/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:14:55,827 basehttp 124 "GET /mobiles/17312121212/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:14:56,074 basehttp 124 "GET /mobiles/17312121212/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:14:56,107 basehttp 124 "GET /sms_codes/17312121212/ HTTP/1.1" 200 4
+INFO 2019-09-11 11:15:12,015 basehttp 124 "GET /usernames/zhangmingyue/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:15:12,022 basehttp 124 "GET /mobiles/17312121212/count/ HTTP/1.1" 200 11
+ERROR 2019-09-11 11:15:12,027 exceptions 25 [<users.views.UserView object at 0x7f433e0cb898>] (1062, "Duplicate entry '' for key 'mobile'")
+ERROR 2019-09-11 11:15:12,028 basehttp 124 "POST /users/ HTTP/1.1" 507 35
+INFO 2019-09-11 11:17:59,558 basehttp 124 "GET /usernames/changyu/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:18:06,231 basehttp 124 "GET /usernames/zhangmingyue/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:18:16,760 basehttp 124 "GET /mobiles/17312121212/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:18:18,678 basehttp 124 "GET /mobiles/17312121212/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:18:18,722 basehttp 124 "GET /sms_codes/17312121212/ HTTP/1.1" 200 4
+INFO 2019-09-11 11:18:38,026 basehttp 124 "GET /usernames/zhangmingyue/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:18:38,028 basehttp 124 "GET /mobiles/17312121212/count/ HTTP/1.1" 200 11
+ERROR 2019-09-11 11:20:15,587 exceptions 25 [<users.views.UserView object at 0x7fe5aa0a5cf8>] (1062, "Duplicate entry '' for key 'mobile'")
+ERROR 2019-09-11 11:21:11,248 basehttp 124 "POST /users/ HTTP/1.1" 507 35
+INFO 2019-09-11 11:21:19,054 basehttp 124 "GET /usernames/zhangmingyue/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:21:19,065 basehttp 124 "GET /mobiles/17312121212/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:21:36,772 basehttp 124 "GET /usernames/changyu/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:21:39,197 basehttp 124 "GET /usernames/mingyue/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:22:05,712 basehttp 124 "GET /mobiles/17369595959/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:22:05,944 basehttp 124 "GET /mobiles/17369595959/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:22:05,988 basehttp 124 "GET /sms_codes/17369595959/ HTTP/1.1" 200 4
+INFO 2019-09-11 11:22:28,469 basehttp 124 "GET /mobiles/17369595959/count/ HTTP/1.1" 200 11
+ERROR 2019-09-11 11:22:28,487 exceptions 25 [<users.views.UserView object at 0x7f12277816d8>] (1062, "Duplicate entry '' for key 'mobile'")
+ERROR 2019-09-11 11:22:28,490 basehttp 124 "POST /users/ HTTP/1.1" 507 35
+INFO 2019-09-11 11:22:28,494 basehttp 124 "GET /usernames/mingyue/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:22:30,449 basehttp 124 "GET /mobiles/17369595959/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:22:30,453 basehttp 124 "GET /usernames/mingyue/count/ HTTP/1.1" 200 11
+ERROR 2019-09-11 11:22:30,460 exceptions 25 [<users.views.UserView object at 0x7f1226f7d668>] (1062, "Duplicate entry '' for key 'mobile'")
+ERROR 2019-09-11 11:22:30,461 basehttp 124 "POST /users/ HTTP/1.1" 507 35
+INFO 2019-09-11 11:22:31,944 basehttp 124 "GET /mobiles/17369595959/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:22:31,947 basehttp 124 "GET /usernames/mingyue/count/ HTTP/1.1" 200 11
+ERROR 2019-09-11 11:22:31,957 exceptions 25 [<users.views.UserView object at 0x7f1226f6def0>] (1062, "Duplicate entry '' for key 'mobile'")
+ERROR 2019-09-11 11:22:31,958 basehttp 124 "POST /users/ HTTP/1.1" 507 35
+INFO 2019-09-11 11:38:04,437 basehttp 124 "GET /usernames/changyu/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:38:09,694 basehttp 124 "GET /usernames/zhangmingyue/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:38:25,869 basehttp 124 "GET /mobiles/17351515151/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:38:26,125 basehttp 124 "GET /mobiles/17351515151/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:38:26,149 basehttp 124 "GET /sms_codes/17351515151/ HTTP/1.1" 200 4
+INFO 2019-09-11 11:38:40,955 basehttp 124 "GET /mobiles/17351515151/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:38:40,959 basehttp 124 "GET /usernames/zhangmingyue/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 11:38:40,998 basehttp 124 "POST /users/ HTTP/1.1" 201 58
+WARNING 2019-09-11 11:38:41,115 base 152 Not Found: /skus/search/
+WARNING 2019-09-11 11:38:41,116 basehttp 124 "GET /skus/search/?page=1&page_size=6 HTTP/1.1" 404 2729
+WARNING 2019-09-11 11:42:53,475 base 152 Not Found: /skus/search/
+WARNING 2019-09-11 11:42:53,475 basehttp 124 "GET /skus/search/?page=1&page_size=6 HTTP/1.1" 404 2729

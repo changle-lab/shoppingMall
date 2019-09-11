@@ -3,11 +3,18 @@ from random import randint
 
 # Create your views here.
 from django_redis import get_redis_connection
+from rest_framework import serializers
+from rest_framework.generics import CreateAPIView
 from rest_framework.response import Response
 from celery_tasks.sms_code.tasks import send_sms_code
 from rest_framework.views import APIView
 
 from libs.yuntongxun.sms import CCP
+from users.models import User
+
+# 发送短信
+# from users.serializers import UserSerializers
+from users.serializers import UserSerializer
 
 
 class SMS_Code_View(APIView):
@@ -23,6 +30,7 @@ class SMS_Code_View(APIView):
 
         # 生成短信验证码
         sms_code = "%06d" % randint(0, 999999)
+        print(sms_code)
         # 储存到redis
         conn = get_redis_connection('sms_code')
         pl = conn.pipeline()
@@ -37,3 +45,36 @@ class SMS_Code_View(APIView):
 
         # 返回结果
         return Response("OK")
+
+
+# 验证用户名是否重复
+class UserNameView(APIView):
+    """
+    判断用户名是否重复
+    """
+
+    def get(self, request, username):
+        count = User.objects.filter(username=username).count()
+
+        return Response({'count': count})
+
+
+# 验证手机号是否重复
+class MobileView(APIView):
+    """
+    判断手机号是否重复
+    """
+
+    def get(self, request, mobile):
+        count = User.objects.filter(mobile=mobile).count()
+
+        return Response({'count': count})
+
+
+# 注册
+class UserView(CreateAPIView):
+    """
+    注册
+    """
+    # serializer_class = UserSerializers
+    serializer_class = UserSerializer
