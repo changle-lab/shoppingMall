@@ -558,3 +558,782 @@ WARNING 2019-09-11 11:38:41,115 base 152 Not Found: /skus/search/
 WARNING 2019-09-11 11:38:41,116 basehttp 124 "GET /skus/search/?page=1&page_size=6 HTTP/1.1" 404 2729
 WARNING 2019-09-11 11:42:53,475 base 152 Not Found: /skus/search/
 WARNING 2019-09-11 11:42:53,475 basehttp 124 "GET /skus/search/?page=1&page_size=6 HTTP/1.1" 404 2729
+INFO 2019-09-11 17:00:23,690 basehttp 124 "GET /usernames/wangchangyu/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 17:00:43,815 basehttp 124 "GET /mobiles/17310116666/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 17:00:44,050 basehttp 124 "GET /mobiles/17310116666/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 17:00:44,126 basehttp 124 "GET /sms_codes/17310116666/ HTTP/1.1" 200 4
+INFO 2019-09-11 17:01:01,403 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2019-09-11 17:01:01,415 basehttp 124 "GET /mobiles/17310116666/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 17:01:01,419 basehttp 124 "GET /usernames/wangchangyu/count/ HTTP/1.1" 200 11
+INFO 2019-09-11 17:01:01,459 basehttp 124 "POST /users/ HTTP/1.1" 201 239
+INFO 2019-09-11 17:20:20,339 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+WARNING 2019-09-11 17:20:20,380 base 152 Not Found: /authorizations/
+WARNING 2019-09-11 17:20:20,381 basehttp 124 "POST /authorizations/ HTTP/1.1" 404 2880
+WARNING 2019-09-11 17:20:29,801 base 152 Not Found: /authorizations/
+WARNING 2019-09-11 17:20:29,803 basehttp 124 "POST /authorizations/ HTTP/1.1" 404 2880
+WARNING 2019-09-11 17:20:59,640 base 152 Not Found: /authorizations/
+WARNING 2019-09-11 17:20:59,640 basehttp 124 "POST /authorizations/ HTTP/1.1" 404 2880
+WARNING 2019-09-11 17:21:32,078 base 152 Not Found: /authorizations/
+WARNING 2019-09-11 17:21:32,079 basehttp 124 "POST /authorizations/ HTTP/1.1" 404 2880
+WARNING 2019-09-11 17:24:26,382 basehttp 124 "POST /authorizations/ HTTP/1.1" 400 67
+INFO 2019-09-11 17:24:43,941 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 183
+INFO 2019-09-11 22:08:40,640 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2019-09-11 22:08:40,803 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 221
+INFO 2019-09-12 09:44:23,464 basehttp 124 "GET /usernames/changyu/count/ HTTP/1.1" 200 11
+INFO 2019-09-12 09:44:32,624 basehttp 124 "GET /usernames/13911111111/count/ HTTP/1.1" 200 11
+INFO 2019-09-12 09:44:51,365 basehttp 124 "GET /mobiles/13911111111/count/ HTTP/1.1" 200 11
+INFO 2019-09-12 09:44:51,594 basehttp 124 "GET /mobiles/13911111111/count/ HTTP/1.1" 200 11
+INFO 2019-09-12 09:44:51,643 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-12 09:45:32,416 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2019-09-12 09:45:32,432 basehttp 124 "GET /usernames/13911111111/count/ HTTP/1.1" 200 11
+INFO 2019-09-12 09:45:32,437 basehttp 124 "GET /mobiles/13911111111/count/ HTTP/1.1" 200 11
+INFO 2019-09-12 09:45:32,481 basehttp 124 "POST /users/ HTTP/1.1" 201 239
+INFO 2019-09-12 09:45:41,485 basehttp 124 "GET /usernames/changyu/count/ HTTP/1.1" 200 11
+INFO 2019-09-12 09:45:47,709 basehttp 124 "GET /usernames/13811111111/count/ HTTP/1.1" 200 11
+INFO 2019-09-12 09:46:08,419 basehttp 124 "GET /mobiles/13821111111/count/ HTTP/1.1" 200 11
+INFO 2019-09-12 09:46:08,614 basehttp 124 "GET /sms_codes/13821111111/ HTTP/1.1" 200 4
+INFO 2019-09-12 09:46:08,627 basehttp 124 "GET /mobiles/13821111111/count/ HTTP/1.1" 200 11
+INFO 2019-09-12 09:46:22,927 basehttp 124 "GET /mobiles/13821111111/count/ HTTP/1.1" 200 11
+INFO 2019-09-12 09:46:22,932 basehttp 124 "GET /usernames/13811111111/count/ HTTP/1.1" 200 11
+WARNING 2019-09-12 09:46:22,935 basehttp 124 "POST /users/ HTTP/1.1" 400 55
+WARNING 2019-09-12 13:54:07,610 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2019-09-12 13:54:07,612 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3017
+WARNING 2019-09-12 13:54:12,845 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2019-09-12 13:54:12,847 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3017
+WARNING 2019-09-12 13:54:16,127 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2019-09-12 13:54:16,128 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3017
+WARNING 2019-09-12 13:54:17,113 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2019-09-12 13:54:17,113 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3017
+WARNING 2019-09-12 13:56:02,070 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2019-09-12 13:56:02,071 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3017
+WARNING 2019-09-12 13:56:04,189 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2019-09-12 13:56:04,190 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3017
+WARNING 2019-09-12 13:56:04,754 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2019-09-12 13:56:04,754 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3017
+ERROR 2019-09-12 13:59:43,007 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/request.py", line 411, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'query_paramas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 17, in get
+    state = request.query_paramas.get('next')
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/request.py", line 413, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'query_paramas'
+ERROR 2019-09-12 13:59:43,058 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19577
+ERROR 2019-09-12 13:59:45,238 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/request.py", line 411, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'query_paramas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 17, in get
+    state = request.query_paramas.get('next')
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/request.py", line 413, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'query_paramas'
+ERROR 2019-09-12 13:59:45,269 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19577
+ERROR 2019-09-12 14:00:10,429 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 29, in get
+    return Response({'login_url': login_url})
+TypeError: __init__() takes 1 positional argument but 2 were given
+ERROR 2019-09-12 14:00:10,455 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19082
+ERROR 2019-09-12 14:02:21,036 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 28, in get
+    return Response({'login_url': login_url})
+TypeError: __init__() takes 1 positional argument but 2 were given
+ERROR 2019-09-12 14:02:21,063 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19082
+ERROR 2019-09-12 14:04:44,534 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 30, in get
+    return Response({'login_url': login_url})
+TypeError: __init__() takes 1 positional argument but 2 were given
+ERROR 2019-09-12 14:04:44,562 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19082
+ERROR 2019-09-12 14:11:03,082 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 24, in get
+    next=next)
+TypeError: __init__() got an unexpected keyword argument 'next'
+ERROR 2019-09-12 14:11:03,134 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19058
+ERROR 2019-09-12 14:12:28,329 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 31, in get
+    return Response({'login_url': login_url})
+TypeError: __init__() takes 1 positional argument but 2 were given
+ERROR 2019-09-12 14:12:28,360 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19082
+ERROR 2019-09-12 14:13:01,549 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 31, in get
+    return Response({'login_url': login_url})
+TypeError: __init__() takes 1 positional argument but 2 were given
+ERROR 2019-09-12 14:13:01,575 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19082
+ERROR 2019-09-12 14:21:48,432 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 48, in get
+    return Response({'login_url':login_url})
+TypeError: __init__() takes 1 positional argument but 2 were given
+ERROR 2019-09-12 14:21:48,462 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19081
+ERROR 2019-09-12 14:25:03,622 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 50, in get
+    return Response(data)
+TypeError: __init__() takes 1 positional argument but 2 were given
+ERROR 2019-09-12 14:25:03,648 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19062
+ERROR 2019-09-12 14:26:02,251 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 50, in get
+    return Response(data)
+TypeError: __init__() takes 1 positional argument but 2 were given
+ERROR 2019-09-12 14:26:02,276 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19062
+ERROR 2019-09-12 14:29:51,698 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 52, in get
+    return Response(data)
+TypeError: __init__() takes 1 positional argument but 2 were given
+ERROR 2019-09-12 14:29:51,768 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19062
+ERROR 2019-09-12 14:36:54,333 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 47, in get
+    redirect_uri=settings.QQ_REDIRECT_URI, state=next)
+TypeError: __init__() got multiple values for argument 'client_id'
+ERROR 2019-09-12 14:36:54,369 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19107
+ERROR 2019-09-12 15:17:51,793 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 52, in get
+    state=next)
+TypeError: __init__() got multiple values for argument 'client_id'
+ERROR 2019-09-12 15:17:51,845 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19068
+ERROR 2019-09-12 15:20:08,321 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 52, in get
+    state='/')
+TypeError: __init__() got multiple values for argument 'client_id'
+ERROR 2019-09-12 15:20:08,352 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19067
+ERROR 2019-09-12 15:21:19,292 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 57, in get
+    return Response(data)
+TypeError: __init__() takes 1 positional argument but 2 were given
+ERROR 2019-09-12 15:21:19,329 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19062
+ERROR 2019-09-12 17:11:47,769 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 57, in get
+    return Response(data)
+TypeError: __init__() takes 1 positional argument but 2 were given
+ERROR 2019-09-12 17:11:47,809 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19062
+ERROR 2019-09-12 17:12:09,485 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 57, in get
+    return Response(data)
+TypeError: __init__() takes 1 positional argument but 2 were given
+ERROR 2019-09-12 17:12:09,511 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19062
+ERROR 2019-09-12 17:12:17,358 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 57, in get
+    return Response(data)
+TypeError: __init__() takes 1 positional argument but 2 were given
+ERROR 2019-09-12 17:12:17,387 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19062
+ERROR 2019-09-12 17:12:18,729 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 57, in get
+    return Response(data)
+TypeError: __init__() takes 1 positional argument but 2 were given
+ERROR 2019-09-12 17:12:18,762 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19062
+ERROR 2019-09-12 17:12:28,202 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 57, in get
+    return Response(data)
+TypeError: __init__() takes 1 positional argument but 2 were given
+ERROR 2019-09-12 17:12:28,232 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19062
+ERROR 2019-09-12 17:23:22,779 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 57, in get
+    return Response(data)
+TypeError: __init__() takes 1 positional argument but 2 were given
+ERROR 2019-09-12 17:23:22,808 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19063
+ERROR 2019-09-12 17:26:59,894 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 52, in get
+    state='/')
+TypeError: __init__() got multiple values for argument 'client_id'
+ERROR 2019-09-12 17:26:59,918 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19068
+ERROR 2019-09-12 17:32:05,369 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 54, in get
+    state='/')
+TypeError: __init__() got an unexpected keyword argument 'response_type'
+ERROR 2019-09-12 17:32:05,395 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19080
+INFO 2019-09-12 18:28:01,053 basehttp 124 "GET /usernames/changyu/count/ HTTP/1.1" 200 11
+ERROR 2019-09-12 18:37:03,872 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 54, in get
+    state='/')
+TypeError: __init__() got multiple values for argument 'client_id'
+ERROR 2019-09-12 18:37:03,919 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19011
+ERROR 2019-09-12 18:37:27,725 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 59, in get
+    return Response(data)
+TypeError: __init__() takes 1 positional argument but 2 were given
+ERROR 2019-09-12 18:37:27,765 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19006
+WARNING 2019-09-12 18:45:46,803 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 405 45
+WARNING 2019-09-12 18:47:14,841 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 405 45
+ERROR 2019-09-12 18:47:49,328 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() takes 1 positional argument but 2 were given
+ERROR 2019-09-12 18:47:49,352 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 18848
+ERROR 2019-09-12 18:48:38,425 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 400, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'str'>`
+ERROR 2019-09-12 18:48:38,468 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 89834
+WARNING 2019-09-12 18:50:16,799 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2019-09-12 18:50:16,800 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3090
+WARNING 2019-09-12 18:50:28,825 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2019-09-12 18:50:28,826 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3090
+ERROR 2019-09-12 18:51:32,643 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 95, in get
+    return Response(data)
+TypeError: __init__() takes 1 positional argument but 2 were given
+ERROR 2019-09-12 18:51:32,667 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19006
+ERROR 2019-09-12 18:59:07,594 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 70, in get
+    login_url = oauth.get_login_url()
+AttributeError: 'OAuthQQ' object has no attribute 'get_login_url'
+ERROR 2019-09-12 18:59:07,620 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19016
+ERROR 2019-09-12 19:04:15,938 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 72, in get
+    return Response({'login_url': login_url})
+TypeError: __init__() takes 1 positional argument but 2 were given
+ERROR 2019-09-12 19:04:15,967 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19026
+ERROR 2019-09-12 19:21:30,152 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 74, in get
+    return Response(self, {'login_url': login_url})
+TypeError: __init__() takes 1 positional argument but 3 were given
+ERROR 2019-09-12 19:21:30,187 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 19032
+INFO 2019-09-12 19:23:53,547 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2019-09-12 19:57:26,260 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+WARNING 2019-09-12 19:57:43,432 base 152 Not Found: /oauth/qq/user/
+WARNING 2019-09-12 19:57:43,434 basehttp 124 "GET /oauth/qq/user/?code=F0C08BEFFCC273AE277E1DE37B940879 HTTP/1.1" 404 3087

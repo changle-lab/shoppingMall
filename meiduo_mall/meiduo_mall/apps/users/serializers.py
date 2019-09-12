@@ -2,7 +2,7 @@ import re
 
 from django_redis import get_redis_connection
 from rest_framework import serializers
-
+from rest_framework_jwt.settings import api_settings
 from users.models import User
 
 
@@ -80,10 +80,10 @@ class UserSerializer(serializers.ModelSerializer):
     password2 = serializers.CharField(label='确认密码', write_only=True)
     sms_code = serializers.CharField(label='短信验证码', write_only=True)
     allow = serializers.CharField(label='同意协议', write_only=True)
-
+    token = serializers.CharField(read_only=True)
     class Meta:
         model = User
-        fields = ('id', 'username', 'password', 'password2', 'sms_code', 'mobile', 'allow')
+        fields = ('id', 'username', 'password', 'password2', 'sms_code', 'mobile', 'allow', 'token')
         extra_kwargs = {
             'username': {
                 'min_length': 5,
@@ -121,6 +121,10 @@ class UserSerializer(serializers.ModelSerializer):
         if data['password'] != data['password2']:
             raise serializers.ValidationError('两次密码不一致')
 
+        # 判断用户名是否是手机号
+        if re.match(r'^1[3-9]\d{9}$', data['username']):
+            if data['username'] != data['mobile']:
+                raise serializers.ValidationError('用户名和手机号不一致')
         # 判断短信验证码
         redis_conn = get_redis_connection('sms_code')
         mobile = data['mobile']
@@ -150,4 +154,12 @@ class UserSerializer(serializers.ModelSerializer):
         # user.set_password(validated_data['password'])
         # user.save()
 
+
+        jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+        jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
+
+        payload = jwt_payload_handler(user)
+        token = jwt_encode_handler(payload)
+
+        user.token = token
         return user
