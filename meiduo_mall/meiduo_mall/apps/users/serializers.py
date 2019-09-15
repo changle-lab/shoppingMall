@@ -163,3 +163,10 @@ class UserSerializer(serializers.ModelSerializer):
 
         user.token = token
         return user
+
+class UserShowSerializers(serializers.ModelSerializer):
+
+    class Meta:
+        model = User
+        fields = ('username', 'mobile', 'email', 'id')
+

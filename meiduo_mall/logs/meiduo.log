@@ -1337,3 +1337,1716 @@ INFO 2019-09-12 19:23:53,547 basehttp 124 "GET /oauth/qq/authorization/?next=/ H
 INFO 2019-09-12 19:57:26,260 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
 WARNING 2019-09-12 19:57:43,432 base 152 Not Found: /oauth/qq/user/
 WARNING 2019-09-12 19:57:43,434 basehttp 124 "GET /oauth/qq/user/?code=F0C08BEFFCC273AE277E1DE37B940879 HTTP/1.1" 404 3087
+INFO 2019-09-12 23:44:00,431 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+WARNING 2019-09-12 23:44:32,867 base 152 Not Found: /oauth/qq/user/
+WARNING 2019-09-12 23:44:32,869 basehttp 124 "GET /oauth/qq/user/?code=798626A07B58D816E36B9D7CA0E86952 HTTP/1.1" 404 3087
+INFO 2019-09-12 23:45:34,903 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+WARNING 2019-09-12 23:45:45,721 base 152 Not Found: /oauth/qq/user/
+WARNING 2019-09-12 23:45:45,729 basehttp 124 "GET /oauth/qq/user/?code=B57DBB4817CD5407278E33664372A332 HTTP/1.1" 404 3087
+ERROR 2019-09-12 23:48:41,559 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 48, in get
+    client_secret=settings.QQ_client_secret,
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'QQ_client_secret'
+ERROR 2019-09-12 23:48:41,657 basehttp 124 "GET /oauth/qq/user/?code=B57DBB4817CD5407278E33664372A332 HTTP/1.1" 500 19383
+INFO 2019-09-12 23:48:59,119 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+ERROR 2019-09-12 23:49:10,244 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 48, in get
+    client_secret=settings.QQ_client_secret,
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'QQ_client_secret'
+ERROR 2019-09-12 23:49:10,278 basehttp 124 "GET /oauth/qq/user/?code=51CB1BF4E44A1DB252B8D06824223726 HTTP/1.1" 500 19383
+INFO 2019-09-12 23:50:24,288 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-12 23:50:35,621 basehttp 124 "GET /oauth/qq/user/?code=7671B1DEC939EEC10C9BCA5E2D5162C3 HTTP/1.1" 200 4
+INFO 2019-09-12 23:52:20,493 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-12 23:53:53,149 basehttp 124 "GET /oauth/qq/user/?code=2DF838E03A598E7D4907A770DDD692E1 HTTP/1.1" 200 4
+INFO 2019-09-12 23:54:52,968 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 08:09:03,634 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 08:22:12,913 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 08:24:37,583 basehttp 124 "GET /oauth/qq/user/?code=D7223D5AF8FA09743A7DACCE78E4DB8E HTTP/1.1" 200 4
+INFO 2019-09-13 08:25:13,181 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 08:27:02,798 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 10:13:51,900 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+ERROR 2019-09-13 10:14:45,123 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 55, in get
+    QQuser = OAuthQQUser.objects.get(openid=openid)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+oauth.models.DoesNotExist: OAuthQQUser matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 58, in get
+    data = tjs.dumps({'openid':openid}, 300). decode()
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/itsdangerous.py", line 742, in dumps
+    return signer.sign(self.dump_payload(header, obj))
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/itsdangerous.py", line 353, in sign
+    return value + want_bytes(self.sep) + self.get_signature(value)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/itsdangerous.py", line 347, in get_signature
+    key = self.derive_key()
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/itsdangerous.py", line 333, in derive_key
+    return self.digest_method(salt + b'signer' +
+TypeError: unsupported operand type(s) for +: 'int' and 'bytes'
+ERROR 2019-09-13 10:14:45,203 basehttp 124 "GET /oauth/qq/user/?code=A1C848B5AC16F28B2AA32C4D66975667 HTTP/1.1" 500 20622
+INFO 2019-09-13 10:16:49,962 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 10:17:05,362 basehttp 124 "GET /oauth/qq/user/?code=6010010F0CB7F4A04C9CAAC702C943D6 HTTP/1.1" 200 190
+INFO 2019-09-13 10:17:28,042 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 10:54:34,993 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 10:57:18,704 basehttp 124 "GET /oauth/qq/user/?code=700A390916D988102A31AF5534825E84 HTTP/1.1" 200 190
+INFO 2019-09-13 10:58:34,918 basehttp 124 "GET /sms_codes/17310116666/ HTTP/1.1" 200 4
+INFO 2019-09-13 10:58:50,879 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 10:58:50,908 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 957, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `User.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `User.objects.create()`. You may need to make the field read-only, or override the OauthSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+ERROR 2019-09-13 10:58:50,967 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 23661
+INFO 2019-09-13 10:58:56,897 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 10:58:56,914 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 957, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `User.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `User.objects.create()`. You may need to make the field read-only, or override the OauthSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+ERROR 2019-09-13 10:58:56,960 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 23661
+ERROR 2019-09-13 11:13:36,128 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 60, in get
+    access_token = qq.get_access_token(code)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/QQLoginTool/QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+ERROR 2019-09-13 11:13:36,204 basehttp 124 "GET /oauth/qq/user/?code=700A390916D988102A31AF5534825E84 HTTP/1.1" 500 19371
+INFO 2019-09-13 11:14:01,809 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 11:14:28,089 basehttp 124 "GET /oauth/qq/user/?code=5675B0967DEC0C11934D2FEBA90030EE HTTP/1.1" 200 190
+INFO 2019-09-13 11:15:20,393 basehttp 124 "GET /sms_codes/17310116666/ HTTP/1.1" 200 4
+INFO 2019-09-13 11:15:36,436 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 11:15:36,452 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 957, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `User.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `User.objects.create()`. You may need to make the field read-only, or override the OauthSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+ERROR 2019-09-13 11:15:36,511 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 23661
+INFO 2019-09-13 11:22:36,934 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 11:22:55,332 basehttp 124 "GET /oauth/qq/user/?code=9D2DF408B8A0C56FC15B5DC6CB907A18 HTTP/1.1" 200 190
+INFO 2019-09-13 11:23:17,147 basehttp 124 "GET /sms_codes/17310116666/ HTTP/1.1" 200 4
+INFO 2019-09-13 11:23:28,399 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 11:23:28,419 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 957, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `User.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `User.objects.create()`. You may need to make the field read-only, or override the OauthSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+ERROR 2019-09-13 11:23:28,487 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 23661
+INFO 2019-09-13 11:36:42,504 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 11:37:03,426 basehttp 124 "GET /oauth/qq/user/?code=AC75A8A2FAF126C0FBD279C4F7B7B860 HTTP/1.1" 200 190
+INFO 2019-09-13 11:37:22,551 basehttp 124 "GET /sms_codes/17310115251/ HTTP/1.1" 200 4
+INFO 2019-09-13 11:37:34,484 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 11:37:34,523 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 957, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `User.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `User.objects.create()`. You may need to make the field read-only, or override the OauthSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+ERROR 2019-09-13 11:37:34,605 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 23661
+INFO 2019-09-13 11:42:32,874 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 11:43:02,447 basehttp 124 "GET /oauth/qq/user/?code=211657414D6AB5B76A00BD31EF558286 HTTP/1.1" 200 190
+INFO 2019-09-13 11:43:22,200 basehttp 124 "GET /sms_codes/17310116666/ HTTP/1.1" 200 4
+INFO 2019-09-13 11:43:36,574 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 11:43:36,590 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 957, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `User.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `User.objects.create()`. You may need to make the field read-only, or override the OauthSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+ERROR 2019-09-13 11:43:36,647 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 23661
+INFO 2019-09-13 11:45:31,091 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 11:45:54,889 basehttp 124 "GET /oauth/qq/user/?code=D64849A69E3537C31505C11F3C3D5576 HTTP/1.1" 200 190
+INFO 2019-09-13 11:46:14,241 basehttp 124 "GET /sms_codes/17310116666/ HTTP/1.1" 200 4
+INFO 2019-09-13 11:46:32,679 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 11:48:19,477 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 957, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `User.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `User.objects.create()`. You may need to make the field read-only, or override the OauthSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+ERROR 2019-09-13 11:48:19,642 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 24901
+INFO 2019-09-13 12:45:24,600 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 12:45:49,063 basehttp 124 "GET /oauth/qq/user/?code=C846D39B2E2B9525B593CFDA9A8F7978 HTTP/1.1" 200 190
+INFO 2019-09-13 12:46:12,063 basehttp 124 "GET /sms_codes/17310116666/ HTTP/1.1" 200 4
+INFO 2019-09-13 12:46:26,061 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 12:46:26,070 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 482, in to_internal_value
+    fields = self._writable_fields
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 1020, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 1121, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'username' was declared on serializer OauthSerializer, but has not been included in the 'fields' option.
+ERROR 2019-09-13 12:46:26,128 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 20968
+INFO 2019-09-13 12:49:46,037 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 12:50:00,853 basehttp 124 "GET /oauth/qq/user/?code=582299FA2F94E76B242A1FE525F9B87F HTTP/1.1" 200 190
+INFO 2019-09-13 12:50:54,534 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-13 12:51:12,241 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 12:51:12,250 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 482, in to_internal_value
+    fields = self._writable_fields
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 1045, in get_fields
+    source, info, model, depth
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 1190, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 1302, in build_unknown_field
+    (field_name, model_class.__name__)
+django.core.exceptions.ImproperlyConfigured: Field name `token` is not valid for model `User`.
+ERROR 2019-09-13 12:51:12,296 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 21011
+INFO 2019-09-13 12:52:31,457 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 12:52:42,926 basehttp 124 "GET /oauth/qq/user/?code=79215ADD420187538469F59276195126 HTTP/1.1" 200 190
+INFO 2019-09-13 12:53:03,995 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-13 12:53:14,216 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 12:53:14,233 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 957, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `User.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `User.objects.create()`. You may need to make the field read-only, or override the OauthSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+ERROR 2019-09-13 12:53:14,286 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 23604
+INFO 2019-09-13 13:06:22,978 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 13:06:48,941 basehttp 124 "GET /oauth/qq/user/?code=3938F9DC2910F2AF894BE8E6619FDC8B HTTP/1.1" 200 190
+INFO 2019-09-13 13:07:04,878 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-13 13:07:19,530 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+WARNING 2019-09-13 13:07:19,566 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 42
+INFO 2019-09-13 13:27:06,818 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 13:27:35,623 basehttp 124 "GET /oauth/qq/user/?code=21944DD34E5703B3137972956A28F705 HTTP/1.1" 200 190
+INFO 2019-09-13 13:27:50,423 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-13 13:28:02,896 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 13:28:02,912 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 97, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/serializers.py", line 76, in validate
+    openid = check_save_user_token(access_token)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/utils.py", line 12, in check_save_user_token
+    serializer = Serializer(settings.SECRET_KEY, expires_in=constants.SAVE_QQ_USER_TOKEN_EXPIRES)
+NameError: name 'constants' is not defined
+ERROR 2019-09-13 13:28:02,970 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19865
+INFO 2019-09-13 15:53:29,595 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 15:54:56,054 basehttp 124 "GET /oauth/qq/user/?code=B79498B2D4ED3CBDA0BD7CE8069ABD7D HTTP/1.1" 200 190
+INFO 2019-09-13 15:55:19,386 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-13 15:55:32,590 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 15:55:32,627 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 957, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `User.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `User.objects.create()`. You may need to make the field read-only, or override the OauthSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+ERROR 2019-09-13 15:55:32,798 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 23604
+INFO 2019-09-13 21:43:23,473 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 21:43:41,475 basehttp 124 "GET /oauth/qq/user/?code=BF6A73D0EF71B3B8863419BDDB5EDE65 HTTP/1.1" 200 190
+INFO 2019-09-13 21:43:55,863 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-13 21:44:16,276 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 21:44:16,289 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 957, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `User.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `User.objects.create()`. You may need to make the field read-only, or override the OauthSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+ERROR 2019-09-13 21:44:16,328 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 23603
+INFO 2019-09-13 21:51:04,859 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 21:51:29,087 basehttp 124 "GET /oauth/qq/user/?code=D1ECB9A01CA5A2E9FD94E02E82D89BC5 HTTP/1.1" 200 190
+INFO 2019-09-13 21:51:46,125 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-13 21:52:17,582 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 21:52:17,591 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 169, in create
+    raise NotImplementedError('`create()` must be implemented.')
+NotImplementedError: `create()` must be implemented.
+ERROR 2019-09-13 21:52:17,644 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19841
+INFO 2019-09-13 21:53:31,011 basehttp 124 "GET /oauth/qq/user/?code=A8D4EE07424D2CD79D13092741EBF5B7 HTTP/1.1" 200 190
+INFO 2019-09-13 21:53:50,065 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-13 21:54:01,571 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 21:54:01,588 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 957, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `User.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `User.objects.create()`. You may need to make the field read-only, or override the OauthSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+ERROR 2019-09-13 21:54:01,690 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 23660
+INFO 2019-09-13 22:23:26,304 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 22:23:53,105 basehttp 124 "GET /oauth/qq/user/?code=B2A83F9A065CF98ABF8D3D11D3A1B1B6 HTTP/1.1" 200 190
+INFO 2019-09-13 22:24:05,953 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-13 22:24:22,096 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 22:24:22,111 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 957, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `User.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `User.objects.create()`. You may need to make the field read-only, or override the OauthSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 940, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/query.py", line 392, in create
+    obj = self.model(**kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 68, in __init__
+    super(AbstractBaseUser, self).__init__(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 573, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'sms_code' is an invalid keyword argument for this function
+
+ERROR 2019-09-13 22:24:22,150 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 23603
+INFO 2019-09-13 22:34:34,961 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 22:34:49,702 basehttp 124 "GET /oauth/qq/user/?code=801A8560FF28B059515A681353F6D9C9 HTTP/1.1" 200 190
+INFO 2019-09-13 22:35:11,331 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-13 22:35:35,585 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 22:35:35,594 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 400, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2019-09-13 22:35:35,647 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 89180
+INFO 2019-09-13 22:44:24,197 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 22:44:35,700 basehttp 124 "GET /oauth/qq/user/?code=53E984B4EA99F79EDE502AAC49D8AB82 HTTP/1.1" 200 190
+INFO 2019-09-13 22:44:48,144 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-13 22:45:06,449 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 22:45:06,458 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 400, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2019-09-13 22:45:06,508 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 89180
+INFO 2019-09-13 22:47:04,989 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 22:47:16,465 basehttp 124 "GET /oauth/qq/user/?code=751A99B2001958EC8263161C435E9CF1 HTTP/1.1" 200 190
+INFO 2019-09-13 22:47:34,267 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-13 22:47:47,035 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 22:47:47,042 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 400, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2019-09-13 22:47:47,089 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 89180
+INFO 2019-09-13 22:56:23,608 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 22:56:38,214 basehttp 124 "GET /oauth/qq/user/?code=0E55B0F42EA708D1CDD8AD03C42C11F4 HTTP/1.1" 200 190
+INFO 2019-09-13 22:56:50,946 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-13 22:57:00,810 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 22:57:00,822 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 105, in post
+    user = User.object.filter(mobile=mobile)
+AttributeError: type object 'User' has no attribute 'object'
+ERROR 2019-09-13 22:57:00,852 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19101
+INFO 2019-09-13 22:57:43,226 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 22:57:51,117 basehttp 124 "GET /oauth/qq/user/?code=F96FDE78BF5B95BC377527A345FE6908 HTTP/1.1" 200 190
+INFO 2019-09-13 22:58:04,602 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-13 22:58:13,348 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 22:58:13,355 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 106, in post
+    user_id = user.id
+AttributeError: 'QuerySet' object has no attribute 'id'
+ERROR 2019-09-13 22:58:13,391 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19068
+INFO 2019-09-13 23:01:39,756 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 23:01:51,269 basehttp 124 "GET /oauth/qq/user/?code=AF526E3174C0617CBB7E876B88CEC640 HTTP/1.1" 200 190
+INFO 2019-09-13 23:02:13,547 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-13 23:02:26,251 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 23:02:26,255 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 107, in post
+    username = user.username
+AttributeError: 'QuerySet' object has no attribute 'username'
+ERROR 2019-09-13 23:02:26,292 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19087
+INFO 2019-09-13 23:04:52,628 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 23:05:07,135 basehttp 124 "GET /oauth/qq/user/?code=8161D03723A0C5FEC65A5818B5FF5879 HTTP/1.1" 200 190
+INFO 2019-09-13 23:05:22,822 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-13 23:05:37,738 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 23:05:37,758 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 108, in post
+    qquser = OAuthQQUser(user=user, openid=access_token)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/base.py", line 555, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 216, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "<QuerySet [<User: 13911111111>]>": "OAuthQQUser.user" must be a "User" instance.
+ERROR 2019-09-13 23:05:37,791 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19601
+INFO 2019-09-13 23:08:20,453 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 23:08:32,158 basehttp 124 "GET /oauth/qq/user/?code=08D9F00D14FE18F918D5CB6C959ECE81 HTTP/1.1" 200 190
+INFO 2019-09-13 23:08:44,424 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-13 23:08:53,892 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 23:08:53,897 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 105, in post
+    user = User.object.get(mobile=mobile)
+AttributeError: type object 'User' has no attribute 'object'
+ERROR 2019-09-13 23:08:53,922 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19098
+INFO 2019-09-13 23:09:11,997 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 23:09:20,291 basehttp 124 "GET /oauth/qq/user/?code=EB1B1BD04A314F1CD03C6C49704299BA HTTP/1.1" 200 190
+INFO 2019-09-13 23:09:31,963 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-13 23:09:45,516 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 23:09:45,561 exceptions 25 [<oauth.views.QQAuthUserView object at 0x7fddef86a390>] (1406, "Data too long for column 'openid' at row 1")
+ERROR 2019-09-13 23:09:45,562 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 507 35
+INFO 2019-09-13 23:26:17,896 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 23:26:29,704 basehttp 124 "GET /oauth/qq/user/?code=915BCC92EA019155C6F5389D8E32972D HTTP/1.1" 200 190
+INFO 2019-09-13 23:26:43,517 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-13 23:26:53,933 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+INFO 2019-09-13 23:26:53,961 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 200 222
+INFO 2019-09-13 23:30:00,012 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 23:30:11,681 basehttp 124 "GET /oauth/qq/user/?code=E454CAA747C6717617C16664A5B32758 HTTP/1.1" 200 190
+INFO 2019-09-13 23:30:41,036 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-13 23:30:57,920 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+INFO 2019-09-13 23:30:57,948 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 200 222
+INFO 2019-09-13 23:32:13,243 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 23:32:28,763 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 23:32:40,109 basehttp 124 "GET /oauth/qq/user/?code=37B4ABB5BA4D19206BA22480FB6079A4 HTTP/1.1" 200 190
+INFO 2019-09-13 23:32:53,152 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-13 23:33:07,070 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+INFO 2019-09-13 23:33:07,091 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 200 222
+INFO 2019-09-13 23:51:46,836 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 23:51:58,260 basehttp 124 "GET /oauth/qq/user/?code=5F6F8D3E8EC0C57C6ED1436D6A3CEDF7 HTTP/1.1" 200 190
+INFO 2019-09-13 23:52:11,018 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-13 23:52:22,975 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 23:52:22,986 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 19, in create
+    serializer = self.get_serializer(data=request.data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 110, in get_serializer
+    serializer_class = self.get_serializer_class()
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 127, in get_serializer_class
+    % self.__class__.__name__
+AssertionError: 'QQAuthUserView' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+ERROR 2019-09-13 23:52:23,037 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19802
+INFO 2019-09-13 23:53:24,668 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+WARNING 2019-09-13 23:53:24,705 basehttp 124 "POST /authorizations/ HTTP/1.1" 400 67
+INFO 2019-09-13 23:53:26,237 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 23:53:37,546 basehttp 124 "GET /oauth/qq/user/?code=923E7E0E11ED52B54AD7C461C319AE13 HTTP/1.1" 200 190
+INFO 2019-09-13 23:53:48,318 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-13 23:54:02,208 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 23:54:02,235 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 482, in to_internal_value
+    fields = self._writable_fields
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 1020, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 1121, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'username' was declared on serializer OauthSerializer, but has not been included in the 'fields' option.
+ERROR 2019-09-13 23:54:02,282 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 20968
+INFO 2019-09-13 23:58:00,603 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-13 23:58:12,403 basehttp 124 "GET /oauth/qq/user/?code=B2BDBB178A9EA6CEB25058E9416D7B41 HTTP/1.1" 200 190
+INFO 2019-09-13 23:58:29,313 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-13 23:58:39,898 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-13 23:58:39,932 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/serializers.py", line 75, in validate
+    if attrs['sms_code'] != real_sms_code.decode():
+KeyError: 'sms_code'
+ERROR 2019-09-13 23:58:39,965 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19767
+INFO 2019-09-14 00:00:58,837 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-14 00:01:10,062 basehttp 124 "GET /oauth/qq/user/?code=184494E779F7EFEA440E1B265938BA8A HTTP/1.1" 200 190
+INFO 2019-09-14 00:01:28,748 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-14 00:01:46,637 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-14 00:01:46,651 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/serializers.py", line 72, in validate
+    a = attrs['sms_code']
+KeyError: 'sms_code'
+ERROR 2019-09-14 00:01:46,699 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19741
+INFO 2019-09-14 00:03:13,408 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-14 00:03:24,877 basehttp 124 "GET /oauth/qq/user/?code=1FFE9DB3ACBBCEBBB32B8F61D3B62A4C HTTP/1.1" 200 190
+INFO 2019-09-14 00:03:41,774 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-14 00:03:52,064 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-14 00:04:33,204 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/serializers.py", line 72, in validate
+    a = attrs['sms_code']
+KeyError: 'sms_code'
+ERROR 2019-09-14 00:04:33,317 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 20981
+INFO 2019-09-14 00:06:51,418 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-14 00:07:02,879 basehttp 124 "GET /oauth/qq/user/?code=78E6F8E5B20B82792F16E8A54BCD2C2C HTTP/1.1" 200 190
+INFO 2019-09-14 00:07:23,797 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-14 00:07:41,019 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-14 00:07:41,030 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/serializers.py", line 72, in validate
+    a = attrs['sms_code']
+KeyError: 'sms_code'
+ERROR 2019-09-14 00:07:41,061 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19741
+INFO 2019-09-14 00:11:50,627 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-14 00:12:02,247 basehttp 124 "GET /oauth/qq/user/?code=04EB6ECA3D8FC57C0AE7B35E9915686E HTTP/1.1" 200 190
+INFO 2019-09-14 00:12:17,242 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-14 00:12:32,282 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-14 00:12:32,293 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/serializers.py", line 73, in validate
+    a = attrs['sms_code']
+KeyError: 'sms_code'
+ERROR 2019-09-14 00:12:32,323 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19741
+INFO 2019-09-14 00:14:36,165 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-14 00:14:50,246 basehttp 124 "GET /oauth/qq/user/?code=421BAD3E17DA5554ED45AF067617AE61 HTTP/1.1" 200 190
+INFO 2019-09-14 00:15:06,384 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-14 00:15:17,976 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+INFO 2019-09-14 00:15:18,041 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 201 231
+INFO 2019-09-14 00:22:32,571 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+ERROR 2019-09-14 00:22:47,403 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 89, in get
+    'username': user.name,
+AttributeError: 'User' object has no attribute 'name'
+ERROR 2019-09-14 00:22:47,440 basehttp 124 "GET /oauth/qq/user/?code=385E768F028C0D7D6374F219F06883C6 HTTP/1.1" 500 19213
+INFO 2019-09-14 00:24:41,138 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-14 00:24:55,798 basehttp 124 "GET /oauth/qq/user/?code=12C90E71D2DDD0F364842BE09E1558EE HTTP/1.1" 200 221
+INFO 2019-09-14 00:25:48,450 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-14 00:26:04,757 basehttp 124 "GET /oauth/qq/user/?code=929A37A4DC65C6B6C79D6A7D952657C4 HTTP/1.1" 200 190
+INFO 2019-09-14 00:26:16,249 basehttp 124 "GET /sms_codes/13911111111/ HTTP/1.1" 200 4
+INFO 2019-09-14 00:26:27,414 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+INFO 2019-09-14 00:26:27,465 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 201 231
+INFO 2019-09-14 00:30:06,094 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-14 00:30:23,778 basehttp 124 "GET /oauth/qq/user/?code=35AF71D4CEB47DC2FE2E4E2765A6F329 HTTP/1.1" 200 190
+INFO 2019-09-14 00:30:44,429 basehttp 124 "GET /sms_codes/17310116666/ HTTP/1.1" 200 4
+INFO 2019-09-14 00:30:57,621 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+INFO 2019-09-14 00:30:57,708 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 201 231
+INFO 2019-09-14 00:32:35,984 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-14 00:34:21,189 basehttp 124 "GET /oauth/qq/user/?code=5FCC975E290D8B96058EA5697C287D98 HTTP/1.1" 200 190
+INFO 2019-09-14 00:34:51,767 basehttp 124 "GET /sms_codes/17310116666/ HTTP/1.1" 200 4
+INFO 2019-09-14 00:36:52,391 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-14 00:37:03,773 basehttp 124 "GET /oauth/qq/user/?code=777971D4E5938BFD7CF18CEBC2BE99D7 HTTP/1.1" 200 190
+INFO 2019-09-14 00:37:08,922 basehttp 124 "GET /sms_codes/17310116666/ HTTP/1.1" 200 4
+INFO 2019-09-14 00:37:19,994 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+INFO 2019-09-14 00:37:20,047 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 201 231
+INFO 2019-09-14 00:38:02,291 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-14 00:38:43,015 basehttp 124 "GET /oauth/qq/user/?code=50FE2CF26779B3D9A5F634A77D025912 HTTP/1.1" 200 190
+INFO 2019-09-14 00:41:46,722 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-14 00:43:48,106 basehttp 124 "GET /oauth/qq/user/?code=93D9970E752A679C93B2140B3FC08607 HTTP/1.1" 200 190
+INFO 2019-09-14 00:43:57,984 basehttp 124 "GET /sms_codes/17310116666/ HTTP/1.1" 200 4
+INFO 2019-09-14 00:44:34,851 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-14 00:44:46,244 basehttp 124 "GET /oauth/qq/user/?code=0D39BEF2FA20E3EF5224EEC10E89217C HTTP/1.1" 200 190
+INFO 2019-09-14 00:44:58,398 basehttp 124 "GET /sms_codes/17310116666/ HTTP/1.1" 200 4
+INFO 2019-09-14 00:45:14,211 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+INFO 2019-09-14 00:45:46,225 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-14 00:45:57,632 basehttp 124 "GET /oauth/qq/user/?code=BA0E0564AC52FFE8699ADA35B7FE9F70 HTTP/1.1" 200 190
+INFO 2019-09-14 00:46:00,920 basehttp 124 "GET /sms_codes/17310116666/ HTTP/1.1" 200 4
+INFO 2019-09-14 00:46:16,127 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+INFO 2019-09-14 00:58:11,002 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-14 00:58:25,514 basehttp 124 "GET /oauth/qq/user/?code=C51613C590317888BC7417911CD28F66 HTTP/1.1" 200 190
+INFO 2019-09-14 00:58:30,105 basehttp 124 "GET /sms_codes/17310116666/ HTTP/1.1" 200 4
+INFO 2019-09-14 00:58:41,967 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-09-14 00:58:42,012 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/fields.py", line 441, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/fields.py", line 100, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'Response' object has no attribute 'mobile'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 22, in create
+    headers = self.get_success_headers(serializer.data)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 560, in data
+    ret = super(Serializer, self).data
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/serializers.py", line 514, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/fields.py", line 462, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `mobile` on serializer `OauthSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `Response` instance.
+Original exception text was: 'Response' object has no attribute 'mobile'.
+ERROR 2019-09-14 00:58:42,069 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 20998
+INFO 2019-09-14 01:02:20,379 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-14 01:02:31,871 basehttp 124 "GET /oauth/qq/user/?code=9B9196403F8BBBA24471F660F667C95E HTTP/1.1" 200 221
+INFO 2019-09-14 01:02:50,884 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-14 01:03:05,426 basehttp 124 "GET /oauth/qq/user/?code=A1295731282C4E4D981211769B89A789 HTTP/1.1" 200 221
+INFO 2019-09-14 01:25:39,066 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-14 01:25:53,379 basehttp 124 "GET /oauth/qq/user/?code=14CBA9A2CA0132954AB66A0175D9CCDD HTTP/1.1" 200 190
+INFO 2019-09-14 01:25:57,373 basehttp 124 "GET /sms_codes/17310116666/ HTTP/1.1" 200 4
+INFO 2019-09-14 01:26:07,365 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+INFO 2019-09-14 01:26:07,419 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 201 231
+INFO 2019-09-14 01:27:21,663 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-14 01:27:29,979 basehttp 124 "GET /oauth/qq/user/?code=54489539A4936949A2990B6487DE815B HTTP/1.1" 200 221
+INFO 2019-09-14 01:30:55,329 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-14 01:31:09,892 basehttp 124 "GET /oauth/qq/user/?code=4BA8F243F6836953F8AF4C14387EADBE HTTP/1.1" 200 221
+INFO 2019-09-15 14:20:55,759 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-09-15 14:21:20,316 basehttp 124 "GET /oauth/qq/user/?code=855178B27FBE43E9ED519F40C187DE59 HTTP/1.1" 200 221
+INFO 2019-09-15 14:23:05,218 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+WARNING 2019-09-15 14:23:05,294 base 152 Not Found: /user/
+WARNING 2019-09-15 14:23:05,295 basehttp 124 "GET /user/ HTTP/1.1" 404 2956
+WARNING 2019-09-15 14:23:13,472 base 152 Not Found: /areas/
+INFO 2019-09-15 14:23:13,473 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+WARNING 2019-09-15 14:23:13,474 basehttp 124 "GET /areas/ HTTP/1.1" 404 2959
+WARNING 2019-09-15 14:23:17,071 base 152 Not Found: /addresses/
+WARNING 2019-09-15 14:23:17,076 basehttp 124 "GET /addresses/ HTTP/1.1" 404 2971
+WARNING 2019-09-15 14:23:20,143 base 152 Not Found: /user/
+WARNING 2019-09-15 14:23:20,145 basehttp 124 "GET /user/ HTTP/1.1" 404 2956
+INFO 2019-09-15 22:00:27,309 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+ERROR 2019-09-15 22:00:27,418 exception 135 Internal Server Error: /user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 210, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 57, in retrieve
+    serializer = self.get_serializer(instance)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 110, in get_serializer
+    serializer_class = self.get_serializer_class()
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 127, in get_serializer_class
+    % self.__class__.__name__
+AssertionError: 'UserShowView' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+ERROR 2019-09-15 22:00:27,467 basehttp 124 "GET /user/ HTTP/1.1" 500 19882
+ERROR 2019-09-15 22:00:43,785 exception 135 Internal Server Error: /user/
+Traceback (most recent call last):
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 210, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/mixins.py", line 57, in retrieve
+    serializer = self.get_serializer(instance)
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 110, in get_serializer
+    serializer_class = self.get_serializer_class()
+  File "/home/changle-lab/.virtualenvs/shoppingMall/lib/python3.6/site-packages/rest_framework/generics.py", line 127, in get_serializer_class
+    % self.__class__.__name__
+AssertionError: 'UserShowView' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+ERROR 2019-09-15 22:00:43,811 basehttp 124 "GET /user/ HTTP/1.1" 500 19882
+INFO 2019-09-15 22:06:54,982 basehttp 124 "GET /user/ HTTP/1.1" 200 68
+INFO 2019-09-15 22:06:55,002 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2019-09-15 22:06:55,016 base 152 Not Found: /browse_histories/
+WARNING 2019-09-15 22:06:55,017 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3148

@@ -3,8 +3,8 @@ from random import randint
 
 # Create your views here.
 from django_redis import get_redis_connection
-from rest_framework import serializers
-from rest_framework.generics import CreateAPIView
+# from rest_framework import serializers
+from rest_framework.generics import CreateAPIView, RetrieveAPIView
 from rest_framework.response import Response
 from celery_tasks.sms_code.tasks import send_sms_code
 from rest_framework.views import APIView
@@ -14,7 +14,7 @@ from users.models import User
 
 # 发送短信
 # from users.serializers import UserSerializers
-from users.serializers import UserSerializer
+from users.serializers import UserSerializer, UserShowSerializers
 
 
 class SMS_Code_View(APIView):
@@ -78,3 +78,15 @@ class UserView(CreateAPIView):
     """
     # serializer_class = UserSerializers
     serializer_class = UserSerializer
+
+#个人中心——展示用户信息
+class UserShowView(RetrieveAPIView):
+
+    serializer_class = UserShowSerializers
+
+
+    queryset = User.objects.all()
+
+    def get_object(self):
+
+        return self.request.user
