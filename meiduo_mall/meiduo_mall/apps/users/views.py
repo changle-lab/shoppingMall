@@ -1,20 +1,21 @@
+from django.conf import settings
 from django.shortcuts import render
 from random import randint
 
 # Create your views here.
 from django_redis import get_redis_connection
 # from rest_framework import serializers
-from rest_framework.generics import CreateAPIView, RetrieveAPIView
+from rest_framework.generics import CreateAPIView, RetrieveAPIView, UpdateAPIView
 from rest_framework.response import Response
 from celery_tasks.sms_code.tasks import send_sms_code
 from rest_framework.views import APIView
-
+from itsdangerous import TimedJSONWebSignatureSerializer as TJS
 from libs.yuntongxun.sms import CCP
 from users.models import User
 
 # 发送短信
 # from users.serializers import UserSerializers
-from users.serializers import UserSerializer, UserShowSerializers
+from users.serializers import UserSerializer, UserShowSerializers, UserEmailSerializers
 
 
 class SMS_Code_View(APIView):
@@ -90,3 +91,40 @@ class UserShowView(RetrieveAPIView):
     def get_object(self):
 
         return self.request.user
+
+class UserEmailView(UpdateAPIView):
+
+    serializer_class = UserEmailSerializers
+
+    def get_object(self):
+
+        return self.request.user
+
+
+class UserEmailVifyView(APIView):
+    """
+        邮箱验证
+    """
+
+    def get(self, request):
+        # 获取前段数据
+        token = request.query_params.get('token')
+        # 解密token
+        tjs = TJS(settings.SECRET_KEY, 300)
+        try:
+            data = tjs.loads(token)
+        except:
+            return Response({'errors': '错误的token'}, status=400)
+        # 获取用户数据
+        username = data.get('username')
+        # username
+        # 查询用户对象
+        user = User.objects.get(username = username)
+        # 更新用户的邮箱验证状态
+        user.email_active=True
+        user.save()
+        # 返回验证状态
+        return Response({'email_active': user.email_active})
+
+
+

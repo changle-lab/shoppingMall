@@ -1,9 +1,12 @@
 import re
-
+from django.conf import settings
+from django.core.mail import send_mail
 from django_redis import get_redis_connection
 from rest_framework import serializers
 from rest_framework_jwt.settings import api_settings
 from users.models import User
+from itsdangerous import TimedJSONWebSignatureSerializer as TJS
+from celery_tasks.email.tasks import send_email
 
 
 # class UserSerializers(serializers.ModelSerializer):
@@ -81,6 +84,7 @@ class UserSerializer(serializers.ModelSerializer):
     sms_code = serializers.CharField(label='短信验证码', write_only=True)
     allow = serializers.CharField(label='同意协议', write_only=True)
     token = serializers.CharField(read_only=True)
+
     class Meta:
         model = User
         fields = ('id', 'username', 'password', 'password2', 'sms_code', 'mobile', 'allow', 'token')
@@ -154,7 +158,6 @@ class UserSerializer(serializers.ModelSerializer):
         # user.set_password(validated_data['password'])
         # user.save()
 
-
         jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
         jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
 
@@ -164,9 +167,26 @@ class UserSerializer(serializers.ModelSerializer):
         user.token = token
         return user
 
-class UserShowSerializers(serializers.ModelSerializer):
 
+class UserShowSerializers(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ('username', 'mobile', 'email', 'id')
+        fields = ('username', 'mobile', 'email', 'id', 'email_active')
 
+
+class UserEmailSerializers(serializers.Serializer):
+    email = serializers.EmailField()
+
+    def update(self, instance, validated_data):
+        # 收件人
+        to_email = validated_data['email']
+
+        tjs = TJS(settings.SECRET_KEY, 300)
+
+        token = tjs.dumps({'username': instance.username}).decode()
+
+        send_email.delay(token, to_email)
+
+        instance.email = validated_data['email']
+        instance.save()
+        return instance
