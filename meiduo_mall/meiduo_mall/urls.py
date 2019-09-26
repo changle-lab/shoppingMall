@@ -18,9 +18,12 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-
     #每次注册一个应用，都要注册一次总路由，找到相应的应用，再通过应用的路由找到相应的视图
     url(r'^', include('users.urls')),
-    #
-    url(r'^oauth/', include('oauth.urls'))
+    url(r'^oauth/', include('oauth.urls')),
+    url(r'^', include('areas.urls')),
+    url(r'^', include('goods.urls')),
+    url(r'^ckeditor/', include('ckeditor_uploader.urls')),
+    url(r'^', include('carts.urls'))
+
 ]

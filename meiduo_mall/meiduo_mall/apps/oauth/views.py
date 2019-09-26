@@ -10,6 +10,7 @@ from django.shortcuts import render
 # Create your views here.
 from rest_framework_jwt.settings import api_settings
 
+from carts.utils import merge_cart_cookie_to_redis
 from oauth.models import OAuthQQUser
 from oauth.serializers import OauthSerializer
 from users.models import User
@@ -83,11 +84,13 @@ class QQAuthUserView(CreateAPIView):
             #     'username': user.name,
             #     'token': token
             # }
-
-            return Response({
+            response = Response({
                 'user_id': user.id,
                 'username': user.username,
                 'token': token})
+            response = merge_cart_cookie_to_redis(request, user, response)
+
+            return response
 
     # def post(self, request):
     #     datas = request.data

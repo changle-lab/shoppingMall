@@ -1,3 +1,6 @@
+import base64
+import pickle
+
 from django.conf import settings
 from django.shortcuts import render
 from random import randint
@@ -7,6 +10,9 @@ from django_redis import get_redis_connection
 # from rest_framework import serializers
 from rest_framework.generics import CreateAPIView, RetrieveAPIView, UpdateAPIView
 from rest_framework.response import Response
+from rest_framework_jwt.views import ObtainJSONWebToken
+
+from carts.utils import merge_cart_cookie_to_redis
 from celery_tasks.sms_code.tasks import send_sms_code
 from rest_framework.views import APIView
 from itsdangerous import TimedJSONWebSignatureSerializer as TJS
@@ -125,6 +131,45 @@ class UserEmailVifyView(APIView):
         user.save()
         # 返回验证状态
         return Response({'email_active': user.email_active})
+
+
+
+class UserLoginView(ObtainJSONWebToken):
+    """
+        重写登录方法
+    """
+    def post(self,request, *args, **kwargs):
+        #不修改原有登录逻辑
+        response = super().post(request, *args,**kwargs)
+
+        #增加合并购物车
+        serializer = self.get_serializer(data=request.data)
+        if serializer.is_valid():
+            # 获取user
+            user = serializer.object.get('user') or request.user
+
+            response = merge_cart_cookie_to_redis(request, user, response)
+
+            return response
+
+        return response
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

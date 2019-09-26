@@ -46,10 +46,19 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'ckeditor',  # 富文本编辑器
+    'ckeditor_uploader',  # 富文本编辑器上传图片模块
+    'haystack', #搜索模块
+    'django_crontab',  # 定时任务
 
     'corsheaders',
     'users.apps.UsersConfig',
     'oauth.apps.OauthConfig',
+    'areas.apps.AreasConfig',
+    'goods.apps.GoodsConfig',
+    'contents.apps.ContentsConfig',
+    'carts.apps.CartsConfig',
+
 
 ]
 
@@ -69,7 +78,7 @@ ROOT_URLCONF = 'meiduo_mall.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -157,7 +166,22 @@ CACHES = {
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
-    }
+    },
+
+    "history": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/3",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+    "cart": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/4",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
 }
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "session"
@@ -207,7 +231,7 @@ LOGGING = {
 REST_FRAMEWORK = {
     # 异常处理
     'EXCEPTION_HANDLER': 'meiduo_mall.utils.exceptions.exception_handler',
-    #认证配置
+    # 认证配置
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
         'rest_framework.authentication.SessionAuthentication',
@@ -226,12 +250,12 @@ CORS_ORIGIN_WHITELIST = (
 )
 CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
 
-#jwt配置
-JWT_AUTH={
-    #指定返回结果的方法位置
+# jwt配置
+JWT_AUTH = {
+    # 指定返回结果的方法位置
     'JWT_RESPONSE_PAYLOAD_HANDLER':
         'users.utils.jwt_response_payload_handler',
-    #设置token的过期时间
+    # 设置token的过期时间
     'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
 }
 
@@ -246,14 +270,60 @@ QQ_CLIENT_SECRET = 'c6ce949e04e12ecc909ae6a8b09b637c'
 
 QQ_REDIRECT_URI = 'http://www.meiduo.site:8080/oauth_callback.html'
 
-#制定链接哪个服务器
+# 制定链接哪个服务器
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-#163
+# 163
 EMAIL_HOST = 'smtp.163.com'
 EMAIL_PORT = 25
-#发送邮件的邮箱
+# 发送邮件的邮箱
 EMAIL_HOST_USER = 'changyu_9@163.com'
-#在邮箱中设置的客户端授权密码
+# 在邮箱中设置的客户端授权密码
 EMAIL_HOST_PASSWORD = '881116YUyu'
-#收件人看到的发件人
+# 收件人看到的发件人
 EMAIL_FROM = '美多<changyu_9@163.com>'
+
+REST_FRAMEWORK_EXTENSIONS = {
+    # 缓存时间
+    'DEFAULT_CACHE_RESPONSE_TIMEOUT': 60 * 60,
+    # 缓存储存的位置，指定redis中的库
+    'DEFAULT_USE_CACHE': 'default'
+}
+
+CLIENT_CONF = os.path.join(BASE_DIR, 'utils/fastdfs/client.conf')
+BASE_URL = 'http://image.meiduo.site:8888/'
+# django文件存储
+DEFAULT_FILE_STORAGE = 'meiduo_mall.utils.fastdfs.fdfs_storage.FastDFSStorage'
+# 富文本编辑器ckeditor配置
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',  # 工具条功能
+        'height': 300,  # 编辑器高度
+        # 'width': 300,  # 编辑器宽
+    },
+}
+CKEDITOR_UPLOAD_PATH = ''  # 上传图片保存路径，使用了FastDFS，所以此处设为''
+
+INDEX_FIEL = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'front_end_pc/index.html')
+LIST_FILE = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'front_end_pc/list.html')
+GENERATED_STATIC_HTML_FILES_DIR = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)),
+                                               'front_end_pc')
+
+
+CRONJOBS = [
+    # 每5分钟执行一次生成主页静态文件
+    ('*/5 * * * *', 'contents.utils.generate_static_index_html',
+     '>> /home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/logs/crontab.log')
+]
+# CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'
+
+
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
+        'URL': 'http://127.0.0.1:9200/',  # 此处为elasticsearch运行的服务器ip地址，端口号固定为9200
+        'INDEX_NAME': 'meiduo',  # 指定elasticsearch建立的索引库的名称
+    },
+}
+
+# 当添加、修改、删除数据时，自动生成索引
+# HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
