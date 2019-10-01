@@ -27,15 +27,15 @@ DEBUG = True
 # localhost 是 0.0.0.0
 ALLOWED_HOSTS = ['www.meiduo.site', '127.0.0.1', 'localhost', 'api.meiduo.site']
 print("```~~~~~~~```")
-print(BASE_DIR)
+# print(BASE_DIR)
 # django项目默认导包路径
 import sys
 
-print(sys.path)
+# print(sys.path)
 # 告诉django项目路径
 sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
-print(sys.path)
-print("``~~~~~~~~``")
+# print(sys.path)
+# print("``~~~~~~~~``")
 # Application definition
 
 INSTALLED_APPS = [
@@ -58,6 +58,9 @@ INSTALLED_APPS = [
     'goods.apps.GoodsConfig',
     'contents.apps.ContentsConfig',
     'carts.apps.CartsConfig',
+    'orders.apps.OrdersConfig',
+    #end
+    'payments.apps.PaymentsConfig'
 
 
 ]
@@ -104,6 +107,15 @@ DATABASES = {
         'PORT': 3306,
         'USER': 'meiyu',
         'PASSWORD': 'meiyu',
+
+    },
+    'slave': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'shoppingmall',
+        'HOST': '127.0.0.1',
+        'PORT': 8306,
+        'USER': 'root',
+        'PASSWORD': 'mysql',
 
     }
 }
@@ -310,8 +322,8 @@ GENERATED_STATIC_HTML_FILES_DIR = os.path.join(os.path.dirname(os.path.dirname(B
 
 
 CRONJOBS = [
-    # 每5分钟执行一次生成主页静态文件
-    ('*/5 * * * *', 'contents.utils.generate_static_index_html',
+    # 每50分钟执行一次生成主页静态文件
+    ('*/50 * * * *', 'contents.utils.generate_static_index_html',
      '>> /home/changle-lab/Desktop/shopping_mall/shoppingMall/meiduo_mall/logs/crontab.log')
 ]
 # CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'
@@ -327,3 +339,12 @@ HAYSTACK_CONNECTIONS = {
 
 # 当添加、修改、删除数据时，自动生成索引
 # HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
+
+# 支付宝
+ALIPAY_APPID = "2016101300679226"
+ALIPAY_URL = "https://openapi.alipaydev.com/gateway.do?"
+ALIPAY_DEBUG = True
+
+
+# 配置读写分离
+DATABASE_ROUTERS = ['meiduo_mall.utils.db_router.MasterSlaveDBRouter']
